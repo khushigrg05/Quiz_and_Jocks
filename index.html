@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Interactive Quiz & Joke App</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎯 Interactive Quiz & Jokes</h1>
+    <nav>
+      <a href="#quizCard">Quiz</a>
+      <a href="#jokeCard">Jokes</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="card" id="quizCard">
+      <h2>Live Quiz</h2>
+      <div id="allQuestions"></div>
+      <button class="submit-btn" onclick="checkAllAnswers()">Submit Quiz</button>
+      <button class="retake-btn" onclick="retakeQuiz()" style="display:none">Retake Quiz</button>
+      <p id="quizResult"></p>
+    </div>
+    <div class="card" id="jokeCard">
+      <h2>Chuck Norris Jokes</h2>
+      
+      <button class="joke-btn" onclick="fetchJokes()">😂 Load Jokes</button>
+      <ul id="jokeList"></ul>
+    </div>
+  </div>
+  <footer>
+    <p>✨ Built using HTML, CSS, JavaScript & Public APIs</p>
+    <p>📚 APIs used:
+        <a href="https://opentdb.com/" target="_blank">Open Trivia DB</a>,
+        
+        <a href="https://api.chucknorris.io/" target="_blank">Chuck Norris API</a>
+    </p>
+    <p>🔗 Connect:
+        <a href="https://github.com/khushi05grg" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/khushi-garg-668334274/">Contact</a>
+    </p>
+</footer>
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>
+
